@@ -968,6 +968,10 @@ select {
   min-width: 0px;
 }
 
+.flex-1 {
+  flex: 1 1 0%;
+}
+
 .list-disc {
   list-style-type: disc;
 }
@@ -986,6 +990,10 @@ select {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -1010,6 +1018,10 @@ select {
 
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .overflow-hidden {
@@ -1396,6 +1408,10 @@ select {
 }
 
 @media (min-width: 640px) {
+  .sm\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1426,6 +1442,10 @@ select {
 }
 
 @media (min-width: 1280px) {
+  .xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
