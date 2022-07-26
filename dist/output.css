@@ -832,6 +832,11 @@ select {
   margin-bottom: 4rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -928,6 +933,10 @@ select {
   height: 1.25rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -972,6 +981,10 @@ select {
   width: 16rem;
 }
 
+.w-16 {
+  width: 4rem;
+}
+
 .min-w-0 {
   min-width: 0px;
 }
@@ -1008,6 +1021,10 @@ select {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1038,6 +1055,10 @@ select {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
 }
 
 .rounded {
@@ -1196,6 +1217,10 @@ select {
 
 .pl-6 {
   padding-left: 1.5rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 
 .text-left {
