@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  .py-navbar-item {
+    @apply py-4;
+  }
+
+  .px-navbar-item {
+    @apply px-5;
+  }
+}
