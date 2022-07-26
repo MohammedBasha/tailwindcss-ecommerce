@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/dist/output.css">
 </head>
 
-<body>
+<body class="bg-gray-200">
     <header class="flex justify-between items-center bg-slate-800 text-white px-4">
         <div><a href="/src/index.html" class="flex items-center py-navbar-item px-navbar-item">Logo</a></div>
         <nav class="hidden md:block">
@@ -57,7 +57,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
                         </svg>
                     </a>
-                    <ul class="absolute left-0 right-0 bg-slate-800">
+                    <ul class="absolute z-10 left-0 right-0 bg-slate-800">
                         <li>
                             <a href="/src/profile.html" class="flex items-center py-2 px-4 hover:bg-slate-700">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none"
@@ -130,7 +130,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </button>
-        <div class="block md:hidden fixed top-0 left-0 bottom-0 h-full w-[220px] bg-slate-900 shadow-2xl">
+        <div class="xblock xmd:hidden hidden fixed top-0 left-0 bottom-0 h-full w-[220px] bg-slate-900 shadow-2xl">
             <ul class="">
                 <li>
                     <a href="/src/index.html"
@@ -241,6 +241,239 @@
             </ul>
         </div>
     </header>
+
+    <!-- Product Listing -->
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 p-5">
+        <!-- Product Item -->
+        <div
+            class="bg-white overflow-hidden rounded shadow border border-gray-300 hover:border-purple-500 transition-colors">
+            <a href="/src/product.html">
+                <img src="images/elec-1.jpg" alt="Product 1"
+                    class="rounded-t-md hover:scale-105 transition-transform hover:rotate-1 w-full">
+            </a>
+            <div class="p-3">
+                <h3>
+                    <a href="/src/product.html" class="text-black font-semibold hover:text-gray-600">
+                        simply dummy text of the printing and typesetting industry
+                    </a>
+                </h3>
+                <p class="text-xl font-semibold">
+                    $17.65
+                </p>
+                <div class="flex justify-between items-center mt-3">
+                    <button
+                        class="flex items-center justify-center text-purple-500 w-10 h-10 rounded-full border-2 border-purple-500 hover:text-white hover:bg-purple-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="flex items-center rounded py-2 px-3 text-white bg-purple-500 hover:bg-purple-600 active:bg-purple-700 transition-colors shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/ Product Item -->
+        <!-- Product Item -->
+        <div
+            class="bg-white overflow-hidden rounded shadow border border-gray-300 hover:border-purple-500 transition-colors">
+            <a href="/src/product.html">
+                <img src="images/elec-1.jpg" alt="Product 1"
+                    class="rounded-t-md hover:scale-105 transition-transform hover:rotate-1 w-full">
+            </a>
+            <div class="p-3">
+                <h3>
+                    <a href="/src/product.html" class="text-black font-semibold hover:text-gray-600">
+                        simply dummy text of the printing and typesetting industry
+                    </a>
+                </h3>
+                <p class="text-xl font-semibold">
+                    $17.65
+                </p>
+                <div class="flex justify-between items-center mt-3">
+                    <button
+                        class="flex items-center justify-center text-purple-500 w-10 h-10 rounded-full border-2 border-purple-500 hover:text-white hover:bg-purple-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="flex items-center rounded py-2 px-3 text-white bg-purple-500 hover:bg-purple-600 active:bg-purple-700 transition-colors shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/ Product Item -->
+        <!-- Product Item -->
+        <div
+            class="bg-white overflow-hidden rounded shadow border border-gray-300 hover:border-purple-500 transition-colors">
+            <a href="/src/product.html">
+                <img src="images/elec-1.jpg" alt="Product 1"
+                    class="rounded-t-md hover:scale-105 transition-transform hover:rotate-1 w-full">
+            </a>
+            <div class="p-3">
+                <h3>
+                    <a href="/src/product.html" class="text-black font-semibold hover:text-gray-600">
+                        simply dummy text of the printing and typesetting industry
+                    </a>
+                </h3>
+                <p class="text-xl font-semibold">
+                    $17.65
+                </p>
+                <div class="flex justify-between items-center mt-3">
+                    <button
+                        class="flex items-center justify-center text-purple-500 w-10 h-10 rounded-full border-2 border-purple-500 hover:text-white hover:bg-purple-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="flex items-center rounded py-2 px-3 text-white bg-purple-500 hover:bg-purple-600 active:bg-purple-700 transition-colors shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/ Product Item -->
+        <!-- Product Item -->
+        <div
+            class="bg-white overflow-hidden rounded shadow border border-gray-300 hover:border-purple-500 transition-colors">
+            <a href="/src/product.html">
+                <img src="images/elec-1.jpg" alt="Product 1"
+                    class="rounded-t-md hover:scale-105 transition-transform hover:rotate-1 w-full">
+            </a>
+            <div class="p-3">
+                <h3>
+                    <a href="/src/product.html" class="text-black font-semibold hover:text-gray-600">
+                        simply dummy text of the printing and typesetting industry
+                    </a>
+                </h3>
+                <p class="text-xl font-semibold">
+                    $17.65
+                </p>
+                <div class="flex justify-between items-center mt-3">
+                    <button
+                        class="flex items-center justify-center text-purple-500 w-10 h-10 rounded-full border-2 border-purple-500 hover:text-white hover:bg-purple-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="flex items-center rounded py-2 px-3 text-white bg-purple-500 hover:bg-purple-600 active:bg-purple-700 transition-colors shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/ Product Item -->
+        <!-- Product Item -->
+        <div
+            class="bg-white overflow-hidden rounded shadow border border-gray-300 hover:border-purple-500 transition-colors">
+            <a href="/src/product.html">
+                <img src="images/elec-1.jpg" alt="Product 1"
+                    class="rounded-t-md hover:scale-105 transition-transform hover:rotate-1 w-full">
+            </a>
+            <div class="p-3">
+                <h3>
+                    <a href="/src/product.html" class="text-black font-semibold hover:text-gray-600">
+                        simply dummy text of the printing and typesetting industry
+                    </a>
+                </h3>
+                <p class="text-xl font-semibold">
+                    $17.65
+                </p>
+                <div class="flex justify-between items-center mt-3">
+                    <button
+                        class="flex items-center justify-center text-purple-500 w-10 h-10 rounded-full border-2 border-purple-500 hover:text-white hover:bg-purple-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="flex items-center rounded py-2 px-3 text-white bg-purple-500 hover:bg-purple-600 active:bg-purple-700 transition-colors shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/ Product Item -->
+        <!-- Product Item -->
+        <div
+            class="bg-white overflow-hidden rounded shadow border border-gray-300 hover:border-purple-500 transition-colors">
+            <a href="/src/product.html">
+                <img src="images/elec-1.jpg" alt="Product 1"
+                    class="rounded-t-md hover:scale-105 transition-transform hover:rotate-1 w-full">
+            </a>
+            <div class="p-3">
+                <h3>
+                    <a href="/src/product.html" class="text-black font-semibold hover:text-gray-600">
+                        simply dummy text of the printing and typesetting industry
+                    </a>
+                </h3>
+                <p class="text-xl font-semibold">
+                    $17.65
+                </p>
+                <div class="flex justify-between items-center mt-3">
+                    <button
+                        class="flex items-center justify-center text-purple-500 w-10 h-10 rounded-full border-2 border-purple-500 hover:text-white hover:bg-purple-500 transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                    <button
+                        class="flex items-center rounded py-2 px-3 text-white bg-purple-500 hover:bg-purple-600 active:bg-purple-700 transition-colors shadow-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <span>Add to cart</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--/ Product Item -->
+    </div>
+    <!--/ Product Listing -->
 </body>
 
 </html>
