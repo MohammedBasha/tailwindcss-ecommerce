@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Custom Classes
+*/
+
 @layer base {
   .py-navbar-item {
     @apply py-4;
@@ -10,4 +14,25 @@
   .px-navbar-item {
     @apply px-5;
   }
+}
+
+.btn-primary {
+  @apply rounded py-2 px-3 text-white bg-purple-500 hover:bg-purple-600 active:bg-purple-700 transition-colors shadow-md;
+}
+
+/*
+  The Product Item Page
+*/
+
+.wysiwyg-content h3,
+.wysiwyg-content h4 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.wysiwyg-content table > tbody > tr > td {
+  padding: 0.25rem 0.125rem;
+}
+.wysiwyg-content table > tbody > tr > td:first-child {
+  font-weight: bold;
 }
